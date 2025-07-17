@@ -31,7 +31,7 @@ journal-abbrev-tool/
 Clone this repository and install:
 
 ```bash
-git clone https://github.com/yourusername/journal-abbrev-tool.git
+git clone https://github.com/siba-p/journal-abbrev-tool.git
 cd journal-abbrev-tool
 pip install .
 ```

@@ -1,4 +1,4 @@
-# 📚 Journal Abbreviation and BibTeX Formatter
+# Journal Abbreviation and BibTeX Formatter
 
 A Python CLI tool to **automatically abbreviate journal names** in `.bib` files and **optionally format** them using `.bst` (BibTeX style) files. Ideal for preparing BibTeX files according to specific journal submission standards.
 
@@ -34,52 +34,39 @@ Clone this repository and install:
 git clone https://github.com/yourusername/journal-abbrev-tool.git
 cd journal-abbrev-tool
 pip install .
+```
+### Usage
 
-### 🚀 Usage
-
-#### 🔤 Abbreviate journal names in a `.bib` file
+#### Abbreviate journal names in a `.bib` file
 
 ```bash
 python -m journal_abbrev.cli path/to/input.bib -o path/to/output.bib
 
 python -m journal_abbrev.cli input.bib --clean
-
+```
 Format using a .bst file
-
+```bash
 python -m journal_abbrev.cli input.bib --bst path/to/style.bst
-
+```
 Auto-fetch .bst style for a specific journal
-
+```bash
 python -m journal_abbrev.cli input.bib --fetch-bst "Nature"
-
+```
 This will search for the matching .bst in journals.json, download it
 
 Example
-
-@article{doi:10.1021/acsomega.4c03344,
-  author  = {Rajput, Satyendra and Panigrahy, Sibasankar and Nayar, Divya},
-  title   = {In Silico View of Crowding: Biomolecular Processes to Nanomaterial Design},
-  journal = {ACS Omega},
-  volume  = {0},
-  number  = {0},
-  pages   = {null},
-  year    = {0},
-  doi     = {10.1021/acsomega.4c03344},
-  URL     = {https://doi.org/10.1021/acsomega.4c03344},
-  eprint  = {https://doi.org/10.1021/acsomega.4c03344}
-}
 
 After running:
 
 python -m journal_abbrev.cli input.bib --clean
 
-@article{doi:10.1021/acsomega.4c03344,
+@article{
   author  = {Rajput, Satyendra and Panigrahy, Sibasankar and Nayar, Divya},
   title   = {In Silico View of Crowding: Biomolecular Processes to Nanomaterial Design},
   journal = {ACS Omega},
-  volume  = {0},
-  number  = {0},
-  pages   = {null},
-  year    = {0}
+  volume  = {--},
+  number  = {--},
+  pages   = {---},
+  year    = {--}
 }
 

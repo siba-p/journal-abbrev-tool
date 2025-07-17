@@ -23,8 +23,8 @@ def fetch_bst_files(json_path=None, save_dir='bst_styles'):
                         f_out.write(response.content)
                     print(f"✅ Downloaded: {journal}")
                 else:
-                    print(f"❌ Failed to download {journal}: HTTP {response.status_code}")
+                    print(f"Failed to download {journal}: HTTP {response.status_code}")
             except Exception as e:
-                print(f"⚠️ Error downloading {journal}: {e}")
+                print(f"Error downloading {journal}: {e}")
 
 

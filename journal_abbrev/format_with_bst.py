@@ -10,5 +10,4 @@ def format_bib_with_bst(bib_path, bst_path, temp_dir):
     subprocess.run(["pdflatex", tex_path], cwd=temp_dir)
     subprocess.run(["bibtex", "temp"], cwd=temp_dir)
 
-    # The result will be in temp.bbl if needed
 

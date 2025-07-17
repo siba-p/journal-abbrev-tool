@@ -5,15 +5,15 @@ A Python CLI tool to **automatically abbreviate journal names** in `.bib` files 
 journal-abbrev-tool/
 │
 ├── journal_abbrev/
-│   ├── __init__.py
-│   ├── abbreviator.py      # Core logic for abbreviation
-│   ├── cli.py              # Command-line interface
+│   ├── __init__.py             # Package initializer
+│   ├── abbreviator.py          # Core logic for abbreviation
+│   ├── cli.py                  # Command-line interface
 │   └── data/
-│       └── journals.json   # Journal abbreviation and .bst links
+│       └── journals.json       # Journal abbreviation and .bst links
 │
-├── tests/                  # Test cases (optional)
-├── setup.py                # Install and dependency config
-├── README.md
+├── tests/                      # Test cases (optional)
+├── setup.py                    # Install and dependency config
+├── README.md                   # Project documentation
 
 ---
 

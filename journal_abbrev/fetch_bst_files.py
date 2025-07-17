@@ -21,7 +21,7 @@ def fetch_bst_files(json_path=None, save_dir='bst_styles'):
                     filename = os.path.join(save_dir, f"{journal.replace(' ', '_')}.bst")
                     with open(filename, "wb") as f_out:
                         f_out.write(response.content)
-                    print(f"✅ Downloaded: {journal}")
+                    print(f"Downloaded: {journal}")
                 else:
                     print(f"Failed to download {journal}: HTTP {response.status_code}")
             except Exception as e:

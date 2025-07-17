@@ -1,7 +1,7 @@
 # Journal Abbreviation and BibTeX Formatter
 
 A Python CLI tool to **automatically abbreviate journal names** in `.bib` files and **optionally format** them using `.bst` (BibTeX style) files. Ideal for preparing BibTeX files according to specific journal submission standards.
-<pre> ```text
+<pre> 
 journal-abbrev-tool/
 |
 |-- journal_abbrev/
@@ -14,7 +14,7 @@ journal-abbrev-tool/
 |-- tests/                      # Test cases (optional)
 |-- setup.py                    # Install and dependency config
 |-- README.md                   # Project documentation
-```<prep>
+<prep>
 ---
 
 ## Features
